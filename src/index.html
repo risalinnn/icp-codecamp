@@ -1,5 +1,716 @@
-<center>
-<img src="new.png" width="100%"/>
-<br/>
-<img src="ceu_codecamp.jpg"/>
-</center>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"rel="stylesheet"/>
+    <title>Home</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__content">
+        <input type="checkbox" name="check" id="check" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+
+        <div class="logo"><a href="#">Rizzalyn Cuaresma</a></div>
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+      </div>
+    </nav>
+
+  <section class="section">
+    <div class="section__container">
+      <div class="content">
+        <p class="subtitle">HELLO</p>
+        <h1 class="title">
+         <span>MABUHAY</span>
+        </h1>
+        <p class="description">
+          Welcome to my web developer portfolio! I'm Rizzalyn Cuaresma, a skilled and
+          creative web developer with a passion for creating beautiful,
+          responsive, and user-friendly websites. I've worked on a variety of
+          web projects, ranging from personal blogs to e-commerce platforms.
+        </p>
+
+        </div>
+      </div>
+      <div class="image">
+        <img src="portfolio/pic.jpeg" alt="profile" />
+      </div>
+    </div>
+  </section>
+
+  </div>
+</div>
+</div>
+
+<style>
+.section__container {
+    position: relative;
+    min-height: 100vh;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+  .image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: min(25rem, 90%);
+    text-align: center;
+  }
+
+  .image img {
+    width: 100%;
+    border-radius: 100%;
+  }
+.button {
+  background-color: aquamarine;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 0;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #62d8ab;
+}
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --primary-color: #a855f7;
+  --primary-color-dark: #9333ea;
+  --secondary-color: #ca8a04;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --extra-light: #faf5ff;
+  --max-width: 1200px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  z-index: 99;
+}
+
+.nav__content {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  transition: 0.3s;
+}
+nav .logo a:hover {
+  color: var(--primary-color-dark);
+}
+
+nav .checkbox {
+  display: none;
+}
+
+nav input {
+  display: none;
+}
+nav .checkbox i {
+  font-size: 2rem;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  transition: left 0.3s;
+}
+
+ul li a {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text-dark);
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  border-top-color: var(--secondary-color);
+  border-bottom-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.section {
+  background-color: transparent;
+}
+
+.section__container {
+  min-height: 100vh;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subtitle {
+  letter-spacing: 2px;
+  color: var(--text-light);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.title span {
+  font-weight: 600;
+}
+
+.description {
+  line-height: 1.5rem;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
+.action__btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.action__btns button {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 1rem 2rem;
+  outline: none;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.hire__me {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.hire__me:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.portfolio {
+  color: var(--primary-color);
+}
+
+.portfolio:hover {
+  background-color: var(--primary-color-dark);
+  color: #ffffff;
+}
+
+.image {
+  display: grid;
+  place-items: center;
+}
+
+.image img {
+  width: min(25rem, 90%);
+  border-radius: 100%;
+}
+
+@media (width < 750px) {
+  nav .checkbox {
+    display: block;
+  }
+
+  ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 85px);
+    left: -100%;
+    top: 85px;
+    background-color: var(--extra-light);
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  nav #check:checked ~ ul {
+    left: 0;
+  }
+
+  ul li a {
+    font-size: 1.25rem;
+  }
+
+  .section__container {
+    padding: 10rem 1rem 5rem 1rem;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .image {
+    grid-area: 1/1/2/2;
+  }
+
+  .action__btns {
+    margin: auto;
+  }
+}
+    </style>
+  </body>
+  <body>
+    <nav>
+        <div class="nav__content">
+          <input type="checkbox" name="check" id="check" />
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+          </ul>
+  
+          <div class="logo"><a href="#">Rizzalyn Cuaresma</a></div>
+          <label for="check" class="checkbox">
+            <i class="ri-menu-line"></i>
+          </label>
+        </div>
+      </nav>
+
+    <section class="section">
+      <div class="section__container">
+        <div class="content">
+          <p class="subtitle">HI THERE!</p>
+          <h1 class="title">
+            I'm <span>Rizzalyn Cuaresma</span>
+          </h1>
+          <p class="description">
+            A passionate individual driven by curiosity and a thirst for knowledge. 
+            I have a background in Information Technology field with a keen interest in creating design(Web Designer). 
+            Throughout my academic and professional journey, I've honed various skills such as Communication Skills, Computer Skills, and Multi-tasking.
+          </br>
+            I graduated with a degree in Bachelor of Science in Information Technology from Phinma Araullo University - South Campus. 
+            During my time there, I delved deep into Major Subjects, gaining valuable insights into different Work Tools. 
+            Additionally, I've participated in some of seminars and activities in our school, where I applied my knowledge to solve real-world problems and 
+            collaborate with diverse teams.
+          <div class="action__btns">
+            <button class="skills"><a href="skills.html">Skills and Career Goals</a> </button>
+            <button class="resume"><a href="resume.html">Resume</a> </button>
+          </div>
+        </div>
+        <div class="image">
+          <img src="portfolio/pic.jpeg" alt="profile" />
+        </div>
+      </div>
+    </section>
+
+  </div>
+</div>
+</div>
+</section>
+  <div id="photo-gallery">
+    <h3>CERTIFICATES</h3>
+    <table>
+      <tr>
+        <td><img src="CERTIFICATES/ITC.png" alt="" width="400" height="400"></td>
+        <td><img src="CERTIFICATES/MCSN.png" alt="" width="400" height="400"></td>
+        <td><img src="CERTIFICATES/SUCN.png" alt="" width="400" height="400"></td>
+      </tr>
+      <tr>
+        <td><img src="CERTIFICATES/SUCS.png" alt="" width="400" height="400"></td>
+        <td><img src="CERTIFICATES/4.jpg" alt="" width="400" height="400"></td>
+        <td><img src="CERTIFICATES/5.jpg" alt="" width="400" height="400"></td>
+      </tr>
+    </table>
+  </div>
+
+<style>
+
+  h3{
+    font-size: xx-large;
+  }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0%;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+
+}
+.section__container {
+    position: relative;
+    min-height: 100vh;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+
+  .image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: min(25rem, 90%);
+    text-align: center;
+  }
+
+  .image img {
+    width: 100%;
+    border-radius: 100%;
+  }
+
+.button {
+  background-color: aquamarine;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 0;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #62d8ab;
+}
+
+#photo-gallery {
+  margin: 20px auto;
+  max-width: 2000px;
+}
+
+#photo-gallery h3 {
+  text-align: center;
+}
+
+#photo-gallery table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  
+}
+
+#photo-gallery img {
+  border-radius: 8px;
+  margin: 10px;
+  display: block ;
+  margin-left: auto;
+  margin-right: auto;
+}
+#photo-gallery__container {
+row-gap: 2rem;
+width: auto;
+}
+
+#photo-gallery {
+box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+border-radius: .5rem;
+overflow: hidden;
+}
+#photo-gallery img {
+transition: 1s;
+}
+
+#photo-gallery img:hover {
+transform: scale(1.1);
+}
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --primary-color: #a855f7;
+  --primary-color-dark: #9333ea;
+  --secondary-color: #ca8a04;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --extra-light: #faf5ff;
+  --max-width: 1200px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  z-index: 99;
+}
+
+.nav__content {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  transition: 0.3s;
+}
+nav .logo a:hover {
+  color: var(--primary-color-dark);
+}
+
+nav .checkbox {
+  display: none;
+}
+
+nav input {
+  display: none;
+}
+nav .checkbox i {
+  font-size: 2rem;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  transition: left 0.3s;
+}
+
+ul li a {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text-dark);
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  border-top-color: var(--secondary-color);
+  border-bottom-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.section {
+  background-color: transparent;
+}
+
+.section__container {
+  min-height: 100vh;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subtitle {
+  letter-spacing: 2px;
+  color: var(--text-light);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.title span {
+  font-weight: 600;
+}
+
+.description {
+  line-height: 1.5rem;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
+.action__btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.action__btns button {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 1rem 2rem;
+  outline: none;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.hire__me {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.hire__me:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.portfolio {
+  color: var(--primary-color);
+}
+
+.portfolio:hover {
+  background-color: var(--primary-color-dark);
+  color: #ffffff;
+}
+
+.image {
+  display: grid;
+  place-items: center;
+}
+
+.image img {
+  width: min(25rem, 90%);
+  border-radius: 100%;
+}
+
+@media (width < 750px) {
+  nav .checkbox {
+    display: block;
+  }
+
+  ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 85px);
+    left: -100%;
+    top: 85px;
+    background-color: var(--extra-light);
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  nav #check:checked ~ ul {
+    left: 0;
+  }
+
+  ul li a {
+    font-size: 1.25rem;
+  }
+
+  .section__container {
+    padding: 10rem 1rem 5rem 1rem;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .image {
+    grid-area: 1/1/2/2;
+  }
+
+  .action__btns {
+    margin: auto;
+  }
+}
+
+footer {
+        background-color: transparent;
+        color: black;
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    .social-links a {
+        display: inline-block;
+        margin: 0 10px;
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    }
+
+
+    </style>
+
+<footer>
+  <div class="social-links">
+    <a href="https://www.facebook.com/rizzalyncuaresma?mibextid=ZbWKwL/" target="_blank"><i class="bx bxl-facebook"></i>Facebook</a>
+    <a href="https://www.instagram.com/sunrizzx/?fbclid=IwAR3IHdFKXnQ4b43902QOudhupkA0vcHJDc2IiQXVhwzuVMtmrgMFVKfvEXw/" target="_blank"><i class="bx bxl-instagram"></i>Instagram</a>
+    <a href="mailto:riga.cuaresma.au@gmail.com" target="_blank"><i class='bx bxl-google' ></i>Email</a>
+</div>
+  <p>&copy; 2024 PORTFOLIO. All rights reserved.</p>
+</footer>
+
+  </body>
+</html>
